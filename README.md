@@ -9,6 +9,11 @@ This repository contains my laboratory works for the university C++ course.
 - Laba3.cpp
 - Laba4.cpp
 
+- Laba2_1.cpp
+- Laba2_2.cpp
+- Laba2_3.cpp
+- Laba2_4.cpp
+
 ## 📝 Notes
 
 Some parts of the code contain comments such as:
