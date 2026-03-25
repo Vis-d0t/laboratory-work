@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// ВАРИАНТ 3
 // вычисление суммы ряда e^x
 double sr(double x, double e) {
     double s = 1.0;   // сумма

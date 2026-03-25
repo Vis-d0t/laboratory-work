@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// ВАРИАНТ 3
 // рекурсивный вывод
 void fr(int n, int a = 0, int b = 1) {
     if (n <= 0) return;

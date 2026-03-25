@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// ВАРИАНТ 3
 // Функция вычисляет A^2, A^3, A^4
 void pwr(double a, double &b, double &c, double &d) {
     b = a * a;        // A^2
