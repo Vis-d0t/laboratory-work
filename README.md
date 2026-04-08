@@ -20,6 +20,17 @@ This repository contains my laboratory works for the university C++ course.
 - Laba3_4.cpp
 - Laba3_5.cpp
 
+- Laba4_1.cpp
+- Laba4_2.cpp
+- Laba4_3.cpp
+- Laba4_4.cpp
+
+- Laba5_1.cpp
+- Laba5_2.cpp
+- Laba5_3.cpp
+- Laba5_4.cpp
+- Laba5_5.cpp
+
 ## 📝 Notes
 
 Some parts of the code contain comments such as:
