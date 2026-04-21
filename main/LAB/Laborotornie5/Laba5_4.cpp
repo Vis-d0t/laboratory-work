@@ -1,42 +1,31 @@
 #include <iostream>
 #include <fstream>
 
+double f(double x) {
+    return 2.5 * x - x * x + 10;
+}
+
 int main() {
-    int n;
-    std::cout << "Сколько чисел ввести: ";
-    std::cin >> n;
+    double a, b, h;
 
-    std::ofstream f("nums.txt");
+    std::cout << "Введите a и b: ";
+    std::cin >> a >> b;
 
-    int x;
-    for (int i = 0; i < n; i++) {
-        std::cout << "Введите число: ";
-        std::cin >> x;
-        f << x << " ";
+    std::cout << "Введите шаг: ";
+    std::cin >> h;
+
+    std::ofstream f1("tab.txt");
+
+    f1 << "x\tf(x)" << std::endl;
+    f1 << "----------------" << std::endl;
+
+    for (double x = a; x <= b; x += h) {
+        f1 << x << "\t" << f(x) << std::endl;
     }
 
-    f.close();
+    f1.close();
 
-    int m;
-    std::cout << "Сколько чисел считать: ";
-    std::cin >> m;
-
-    std::ifstream g("nums.txt");
-
-    int s = 0;
-    for (int i = 0; i < m; i++) {
-        if (g >> x) {
-            s += x;
-        }
-    }
-
-    g.close();
-
-    std::cout << "Сумма: " << s << std::endl;
-
-    std::ofstream h("nums.txt", std::ios::app);
-    h << std::endl << "Сумма: " << s;
-    h.close();
+    std::cout << "Таблица записана в файл tab.txt" << std::endl;
 
     return 0;
 }
